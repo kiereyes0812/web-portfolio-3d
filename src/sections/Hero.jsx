@@ -58,8 +58,9 @@ const Hero = () => {
               <h1>into Real Projects</h1>
               <h1>that Deliver Result</h1>
             </div>
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I'm Kier, a passionate software developer with a knack for
+            
+            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none max-w-xl">
+              Hi, I'm Kier, a passionate Full Stack Developer with a knack for
               transforming ideas, concepts, designs, and code into real projects
               that deliver results. With a strong background in software
               development and a keen eye for detail, I specialize in crafting
