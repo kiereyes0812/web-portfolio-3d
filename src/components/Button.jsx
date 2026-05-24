@@ -1,20 +1,27 @@
-const Button = ({ text, className, id }) => {
+const Button = ({ text, className, id, href, download }) => {
+  const handleClick = (e) => {
+    // If button is a download/link button,
+    // don't prevent default behavior
+    if (href) return;
+
+    e.preventDefault();
+
+    const target = document.getElementById("counter");
+
+    if (target && id) {
+      const offset = window.innerHeight * 0.15;
+
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  };
+
   return (
     <a
-      onClick={(e) => {
-        e.preventDefault();
-
-        const target = document.getElementById("counter");
-
-        if (target && id) {
-          const offset = window.innerHeight * 0.15;
-
-          const top =
-            target.getBoundingClientRect().top + window.scrollY - offset;
-
-          window.scrollTo({ top, behavior: "smooth" });
-        }
-      }}
+      href={href}
+      download={download}
+      onClick={handleClick}
       className={`${className ?? ""} cta-wrapper`}
     >
       <div className="cta-button group">

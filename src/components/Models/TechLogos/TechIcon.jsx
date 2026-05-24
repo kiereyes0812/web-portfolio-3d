@@ -18,7 +18,7 @@ const TechIcon = ({ model }) => {
   }, [scene]);
 
   return (
-    <Canvas>
+    <Canvas dpr={[1, 1.5]} frameloop="demand" gl={{ antialias: false }}>
       <ambientLight intensity={0.3} />
       <directionalLight position={[5, 5, 5]} intensity={1} />
       <Environment preset="city" />

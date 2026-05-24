@@ -16,7 +16,11 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <div key={index} className="icon">
-                <img src={socialImg.imgPath} alt="social icon" />
+                <img
+                  src={socialImg.imgPath}
+                  alt="social icon"
+                  className="w-5 h-5 rounded-full object-cover"
+                />
               </div>
             </a>
           ))}

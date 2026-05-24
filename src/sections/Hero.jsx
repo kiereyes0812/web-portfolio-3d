@@ -4,6 +4,7 @@ import HeroExperience from "../components/Models/HeroModels/HeroExperience.jsx";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import AnimatedCounter from "../components/AnimatedCounter.jsx";
+import resume from "../assets/Kier_Brian_Reyes_Full_Stack_Web_Developer_Resume.pdf";
 
 const Hero = () => {
   useGSAP(() => {
@@ -23,7 +24,7 @@ const Hero = () => {
     );
   });
   return (
-    <section id="hero" className="relative overflow-hidden">
+    <section id="hero" className="relative overflow-hidden pt-20">
       <div className="absolute top-0 left-0 z-10">
         <img src="/images/bg.png" alt="background" />
       </div>
@@ -45,7 +46,7 @@ const Hero = () => {
                         <img
                           src={word.imgPath}
                           alt={word.text}
-                          className="xl:size-12 md:size-10 size-7 nd:p-2 p-1 rounded-full bg-white-50"
+                          className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
                         />
 
                         <span>{word.text}</span>
@@ -60,17 +61,24 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none max-w-xl">
-              Hi, I'm Kier, a passionate Full Stack Developer with a knack for
-              transforming ideas, concepts, designs, and code into real projects
-              that deliver results. With a strong background in software
-              development and a keen eye for detail, I specialize in crafting
-              innovative solutions that meet the unique needs of clients across
-              various industries.
+              Hi, I'm Kier Brian, I build full-stack tools that ship fast and
+              hold up under real use. Recent work: CI/CD pipeline on Railway
+              that cut deploy time from 2 hours to 10 minutes, a Shopify
+              platform Lighthouse score raised from 64 to 91, and async cart fix
+              that had gone unresolved for months. I work remotely with 3 active
+              clients across different stacks.
             </p>
             <Button
               className="md:w-80 md:h-16 w-60 h-12"
               id="button"
               text="See my Work"
+            />
+            <Button
+              href={resume}
+              download="Kier_Brian_Reyes_Full_Stack_Web_Developer_Resume.pdf"
+              className="md:w-80 md:h-16 w-60 h-12"
+              id="button"
+              text="Download Resume"
             />
           </div>
         </header>
@@ -82,7 +90,9 @@ const Hero = () => {
           </div>
         </figure>
       </div>
-      <AnimatedCounter />
+      <div className="flex flex-col items-center gap-3 mt-10">
+        <AnimatedCounter />
+      </div>
     </section>
   );
 };

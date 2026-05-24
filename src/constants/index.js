@@ -29,9 +29,9 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
+  { value: 3, suffix: "+", label: "Years of Experience" },
+  { value: 50, suffix: "+", label: "Satisfied Clients" },
+  { value: 30, suffix: "+", label: "Completed Projects" },
   { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
@@ -87,6 +87,28 @@ const abilities = [
     title: "Handles Multiple Clients at Once",
     desc: "Right now I'm juggling three active engagements across different stacks. I've built the systems and habits to keep each one moving without dropping the ball.",
   },
+];
+
+const flatSkills = [
+  // Frontend
+  { name: "React", category: "Frontend" },
+  { name: "Vue.js", category: "Frontend" },
+  { name: "TypeScript", category: "Frontend" },
+  { name: "Tailwind CSS", category: "Frontend" },
+  { name: "Three.js", category: "Frontend" },
+  // Backend
+  { name: "Node.js", category: "Backend" },
+  { name: "Express.js", category: "Backend" },
+  { name: "PHP", category: "Backend" },
+  { name: "WordPress", category: "Backend" },
+  // Database
+  { name: "MongoDB", category: "Database" },
+  { name: "MySQL", category: "Database" },
+  // DevOps & Tools
+  { name: "GitHub Actions", category: "DevOps" },
+  { name: "Railway", category: "DevOps" },
+  { name: "Docker", category: "DevOps" },
+  { name: "Git", category: "DevOps" },
 ];
 
 const techStackImgs = [
@@ -151,7 +173,7 @@ const expCards = [
       "Kier shipped internal tooling that immediately cut our team's content processing time by 40%. He set up our entire CI/CD pipeline to Railway — what used to take two hours now takes under ten minutes. He works independently and delivers.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "Web & App Developer",
+    title: "Web & App Developer (Freelance)",
     date: "December 2025 - Present",
     responsibilities: [
       "Built 4 internal Node.js/React tools that automated content workflows, cutting team processing time by 40%.",
@@ -164,7 +186,7 @@ const expCards = [
       "Kier turned our underperforming storefront into something we're proud of. He found a critical async bug in the cart that had been hurting us for months and fixed it alongside the API slowdown. Mobile performance is night and day.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Web Developer",
+    title: "Web Developer (Contract)",
     date: "January 2025 - May 2026",
     responsibilities: [
       "Refactored React components with hooks and Redux — raised Lighthouse mobile score from 64 to 91.",
@@ -177,7 +199,7 @@ const expCards = [
       "Kier built us a custom WordPress admin that our non-technical team can actually use. Content updates that used to take three days now get done in four hours. He also grew our Facebook and Instagram presence consistently month over month.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Junior WordPress Developer & Web Lead",
+    title: "Junior WordPress Developer & Web Lead (Fulltime)",
     date: "January 2023 - March 2026",
     responsibilities: [
       "Built a custom WP admin UI for non-technical staff — cut content update turnaround from 3 days to 4 hours.",
@@ -249,6 +271,11 @@ const testimonials = [
 
 const socialImgs = [
   {
+    name: "GitHub",
+    imgPath: "/images/github.webp",
+    url: "https://github.com/kiereyes0812/",
+  },
+  {
     name: "insta",
     imgPath: "/images/insta.png",
     url: "https://www.instagram.com/krbrnrys/",
@@ -279,6 +306,7 @@ export {
   expLogos,
   testimonials,
   socialImgs,
+  flatSkills,
   techStackIcons,
   techStackImgs,
   navLinks,

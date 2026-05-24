@@ -11,7 +11,12 @@ const HeroExperience = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
-    <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
+    <Canvas
+      camera={{ position: [0, 0, 15], fov: 45 }}
+      dpr={[1, 1.5]}
+      frameloop="demand"
+      gl={{ antialias: false }}
+    >
       <OrbitControls
         enablePan={false}
         enableZoom={!isTablet}
