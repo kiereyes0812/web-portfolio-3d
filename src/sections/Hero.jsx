@@ -1,6 +1,6 @@
 import { words } from "../constants/index.js";
 import Button from "../components/Button.jsx";
-import HeroExperience from "../components/HeroModels/HeroExperience.jsx";
+import HeroExperience from "../components/Models/HeroModels/HeroExperience.jsx";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import AnimatedCounter from "../components/AnimatedCounter.jsx";
@@ -58,7 +58,7 @@ const Hero = () => {
               <h1>into Real Projects</h1>
               <h1>that Deliver Result</h1>
             </div>
-            
+
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none max-w-xl">
               Hi, I'm Kier, a passionate Full Stack Developer with a knack for
               transforming ideas, concepts, designs, and code into real projects

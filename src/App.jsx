@@ -5,17 +5,27 @@ import LogoSection from "./sections/LogoSection.jsx";
 import FeatureCards from "./sections/FeatureCards.jsx";
 import ExperienceSection from "./sections/ExperienceSection.jsx";
 import TechStack from "./sections/TechStack.jsx";
+import Testimonials from "./sections/Testimonials.jsx";
+import Contact from "./sections/Contact.jsx";
+import Footer from "./sections/Footer.jsx";
+import StarBackground from "./components/StarBackground.jsx";
 
 const App = () => {
   return (
     <>
-      <NavBar />
-      <Hero />
-      <ShowcaseSection />
-      <LogoSection />
-      <FeatureCards />
-      <ExperienceSection />
-      <TechStack />
+      <StarBackground />
+      <main className="relative z-10">
+        <NavBar />
+        <Hero />
+        <ShowcaseSection />
+        <LogoSection />
+        <FeatureCards />
+        <ExperienceSection />
+        <TechStack />
+        <Testimonials />
+        <Contact />
+        <Footer />
+      </main>
     </>
   );
 };

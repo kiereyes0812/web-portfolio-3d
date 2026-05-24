@@ -74,18 +74,18 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Performance-First Mindset",
+    desc: "I don't just ship features, I measure them. From Lighthouse audits to MongoDB indexing, I find the bottleneck and fix it with a number to show for it.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Async-Friendly Communication",
+    desc: "All three of my current clients are remote. I write clear updates, flag blockers early, and don't need hand-holding to stay on track.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Handles Multiple Clients at Once",
+    desc: "Right now I'm juggling three active engagements across different stacks. I've built the systems and habits to keep each one moving without dropping the ball.",
   },
 ];
 
@@ -95,8 +95,8 @@ const techStackImgs = [
     imgPath: "/images/logos/react.png",
   },
   {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
+    name: "Vue Developer",
+    imgPath: "/images/logos/vue.svg",
   },
   {
     name: "Backend Developer",
@@ -107,7 +107,7 @@ const techStackImgs = [
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "Project Manager",
+    name: "DevOps & CI/CD",
     imgPath: "/images/logos/git.svg",
   },
 ];
@@ -120,9 +120,9 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
+    name: "Vue Developer",
+    modelPath: "/models/vue-transformed.glb",
+    scale: 6,
     rotation: [0, 0, 0],
   },
   {
@@ -138,7 +138,7 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "DevOps & CI/CD",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -147,39 +147,42 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
-    responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
-    ],
-  },
-  {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
-    responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
-  },
-  {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review:
+      "Kier shipped internal tooling that immediately cut our team's content processing time by 40%. He set up our entire CI/CD pipeline to Railway — what used to take two hours now takes under ten minutes. He works independently and delivers.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Web & App Developer",
+    date: "December 2025 - Present",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Built 4 internal Node.js/React tools that automated content workflows, cutting team processing time by 40%.",
+      "Integrated Google Search Console and SEMrush APIs into a live React dashboard tracking 200+ domains.",
+      "Set up GitHub Actions CI/CD to Railway — reduced deployment effort from 2 hours to under 10 minutes.",
+    ],
+  },
+  {
+    review:
+      "Kier turned our underperforming storefront into something we're proud of. He found a critical async bug in the cart that had been hurting us for months and fixed it alongside the API slowdown. Mobile performance is night and day.",
+    imgPath: "/images/exp1.png",
+    logoPath: "/images/logo1.png",
+    title: "Web Developer",
+    date: "January 2025 - May 2026",
+    responsibilities: [
+      "Refactored React components with hooks and Redux — raised Lighthouse mobile score from 64 to 91.",
+      "Fixed a critical async cart bug that had gone unresolved and cut catalog API response time by 48% via MongoDB indexing.",
+      "Improved UI responsiveness across desktop and mobile for a Shopify education platform covering 9+ selling channels.",
+    ],
+  },
+  {
+    review:
+      "Kier built us a custom WordPress admin that our non-technical team can actually use. Content updates that used to take three days now get done in four hours. He also grew our Facebook and Instagram presence consistently month over month.",
+    imgPath: "/images/exp2.png",
+    logoPath: "/images/logo2.png",
+    title: "Junior WordPress Developer & Web Lead",
+    date: "January 2023 - March 2026",
+    responsibilities: [
+      "Built a custom WP admin UI for non-technical staff — cut content update turnaround from 3 days to 4 hours.",
+      "Delivered 5 WordPress sites (PHP, ACF, WooCommerce) averaging PageSpeed 88+, boosting organic traffic by 55%.",
+      "Managed Facebook and Instagram growth through content scheduling and performance analytics.",
     ],
   },
 ];
@@ -201,45 +204,45 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Bo Lee",
+    mentions: "bo@selleruniverse",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+      "I can’t say enough good things about Kier. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+    imgPath: "/images/client1.jpeg",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Craig Halsell",
+    mentions: "@craig.halsell.7",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
+      "Working with Kier was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+    imgPath: "/images/client2.jpg",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "Kerry Copeland",
+    mentions: "@kerrydoylecopeland",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    imgPath: "/images/client2.png",
+      "Collaborating with Kier was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Kier's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Kier is the ideal partner.",
+    imgPath: "/images/client3.jpg",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "Landon Rogers",
+    mentions: "@landonrodgers_27356",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "Kier was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
     imgPath: "/images/client5.png",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "Doran Rogers",
+    mentions: "@doranrodgers_56675",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "Kier’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
     imgPath: "/images/client4.png",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "Steve Claus",
+    mentions: "@steve_67518",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "Kier was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
     imgPath: "/images/client6.png",
   },
 ];
@@ -248,18 +251,22 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    url: "https://www.instagram.com/krbrnrys/",
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
+    url: "https://www.facebook.com/kierbrian.reyes/",
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    url: "https://x.com/krbrnrys",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/kier-brian-reyes/",
   },
 ];
 
